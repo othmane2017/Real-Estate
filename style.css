@@ -157,43 +157,6 @@ ul.icon_r li i{
   margin: auto;
   background: #fff;
 }
-.serch {
-  width: 90%;
-  display: block;
-  margin: auto;
-  background: #f38046;
-  padding: 15px 10px;
-}
-input {
-  position: relative;
-  width: 30%;
-  border-radius: 3px;
-  background: #fff;
-  height: 27px;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-}
-.serch a {
-  /* position: absolute; */
-  right: 0;
-  background: #fff;
-  padding: 4px 10px;
-  color: #6abbea;
-}
-.serch a {
-  /* position: absolute; */
-  right: 0;
-  border-radius: 3px;
-  background: #fff;
-  font-size: 1rem;
-  padding: 4px 10px;
-  color: #6abbea;
-}
 
 footer {
   background: #020202;
@@ -458,6 +421,78 @@ a.logo img {
   color: #0054a6;
 
 }
+section.serch_section {
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 84, 166, 0.55);
+  padding: 30px 0;
+  z-index: 5;
+  bottom: 0;
+}
+.input{
+  width: 50%;
+  padding: 0 15px;
+}
+.input input {
+  width: 100%;
+  margin: 0;
+  padding: 9px 0px 9px 13px;
+  color: #333 !important;
+  background-color: #fff;
+  border: 1px solid #315581;
+  box-shadow: none;
+  -webkit-appearance: none;
+  font-size: 13px;
+  background-image: none;
+  line-height: 1.428571429;
+  vertical-align: middle;
+  height: 42px;
+  border-radius: 3px;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.input input::placeholder {
+  color: #8c8c8c;
+}
+.select {
+  width: 25%;
+  padding: 0 15px;
+}
+.select input{
+  width: 100%;
+  margin: 0;
+  padding: 9px 0px 9px 13px;
+  color: #333 !important;
+  background-color: #fff;
+  border: 1px solid #315581;
+  box-shadow: none;
+  -webkit-appearance: none;
+  background-image: none;
+  font-size: 13px;
+  line-height: 1.428571429;
+  vertical-align: middle;
+  height: 42px;
+  border-radius: 3px;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.button_submit {
+  width: 25%;
+  padding: 0 15px;
+}
+.button_submit button {
+    width: 100%;
+    text-align: center;
+    height: 41px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 2px solid #0054a6;
+    background: #0054a6;
+    color: #ffffff;
+    transition: all 0.4s ease-in-out;
+}
+.button_submit button:hover {
+  background: transparent;
+  border: 2px solid #fff;
+}
 /********* end slider style ******/
 
 
@@ -677,6 +712,10 @@ ul.list_choix li i {
   .cards {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .input , .select , .button_submit{
+    width: 100% !important;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 768px) {
